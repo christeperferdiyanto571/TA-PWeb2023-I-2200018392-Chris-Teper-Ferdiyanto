@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <style>
+        * {
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        .container {
+          height: 100vh;
+          background-color: white;
+          color: black;
+          display: flex;
+          flex-direction: row;
+          padding: 0px;
+        }
+
+        .header {
+          background-color: #87CEEB;
+          color: white;
+          justify-content: center;
+          margin: 0%;
+          text-align: center;
+        }
+
+        .navbar {
+          height: 100vh;
+          background-color: #F2AEEE;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+
+        .content {
+          background-color: #87F2AE;
+          justify-content: center;
+          align-items: center;
+          flex: 5;
+        }
+        .container {
+            background-color: #72BE4A;
+            justify-content: alight;
+            flex: 3;
+        }
+</style>
+</head>
+
+<div class="header">
+    <img src="ic.jpeg" alt="logo" width="20%">
+    <h1>FORMULIR PENDAFTARAN BEM UAD</h1>
+</div>
+
+<body>
+    <div class="container">
+    <div class="navbar">
+        <img src="uad.png" alt="logo" width="80.7x" >
+        <img src="uad.png" alt="logo" width="80.7px" align="right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Formulir pendaftaran BEM UAD </a></li>
+            <li><a href="#">Data Diri</a></li>
+            <li><a href="#">Pemilihan Derpartemen</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <form action="POST">
+            <table border="0" cellpadding="5" width="75%">
+                <tr>
+                    <p>Isi data diri di bawah ini : </p>    
+                </tr>
+
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" id="nama"></td>
+                </tr>
+
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td><input type="number" name="nim" id="nim"></td>
+                </tr>
+
+                 <tr>
+                    <td>Fakultas</td>
+                    <td>:</td>
+                    <td>
+                        <select>
+                            <option value="pilih Fakultas">Pilih Fakultas</option>
+                            <option value="Fakultas Agama Islam">Fakultas Agama Islam</option>
+                            <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+                            <option value="Fakultas Hukum">Fakultas Hukum</option>
+                            <option value="Fakultas Psikolgi">Fakultas Psikolgi</option>
+                            <option value="Fakultas Farmasi">Fakultas Farmasi</option>
+                            <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
+                            <option value="Fakultas Kesehatan Masyarakat">Fakultas Kesehatan Masyarakat</option>
+                            <option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                            <option value="Fakultas Teknologi Industri">Fakultas Teknologi Industri</option>
+                            <option value="Fakultas Sastra Budaya dan Komunikasi">Fakultas Sastra Budaya dan Komunikasi</option>
+                            <option value="Fakultas Sains dan Teknologi Terapan">Fakultas Sains dan Teknologi Terapan</option>
+                        </select><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Prodi</td>
+                    <td>:</td>
+                    <td>
+                        <select>
+                            <option value="Pilih Prodi">Pilih Prodi</option>
+                            <option value="Bahasa dan Sastra Arab">Bahasa dan Sastra Arab</option>
+                            <option value="Ilmu Hadis">Ilmu Hadis</option>
+                            <option value="Pend. Agama Islam (Jogja)">Pend. Agama Islam (Jogja)</option>
+                            <option value="Pend. Agama Islam (Wates)">Pend. Agama Islam (Wates)</option>
+                            <option value="Perbankan Syariah">Perbankan Syariah</option>
+                            <option value="Manajemen">Manajemen</option>
+                            <option value="Ekonomi Pembangunan">Ekonomi Pembangunan</option>
+                            <option value="Akuntansi">Akuntansi</option>
+                            <option value="Bisnis Jasa Makanan">Bisnis Jasa Makanan</option>
+                            <option value="Hukum">Hukum</option>
+                            <option value="Psikologi">Psikologi</option>
+                            <option value="Farmasi">Farmasi</option>
+                            <option value="Kedokteran">Kedokteran</option>
+                            <option value="Kesehatan Masyarakat">Kesehatan Masyarakat</option>
+                            <option value="Gizi">Gizi</option>
+                            <option value="Bimbingan dan Konseling">Bimbingan dan Konseling</option>
+                            <option value="Pend. Bahasa dan Sastra Indonesia">Pend. Bahasa dan Sastra Indonesia</option>
+                            <option value="Pend. Bahasa Inggris">Pend. Bahasa Inggris</option>
+                            <option value="Pend. Matematika">Pend. Matematika</option>
+                            <option value="Pend. Fisika">Pend. Fisika</option>
+                            <option value="Pend. Biologi">Pend. Biologi</option>
+                            <option value="Pend. Guru Sekolah Dasar">Pend. Guru Sekolah Dasar</option>
+                            <option value="Pend. Guru PAUD">Pend. Guru PAUD</option>
+                            <option value="Pend. Pancasila dan Kewarganegaraan">Pend. Pancasila dan Kewarganegaraan</option>
+                            <option value="Pend. Vokasional Teknologi Otomotif">Pend. Vokasional Teknologi Otomotif</option>
+                            <option value="Pend. Vokasional Teknik Elektronika">Pend. Vokasional Teknik Elektronika</option>
+                            <option value="Informatika">Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                            <option value="Teknik Kimia">Teknik Kimia</option>
+                            <option value="Teknologi Pangan">Teknologi Pangan</option>
+                            <option value="Sastra Inggris">Sastra Inggris</option>
+                            <option value="Sastra Indonesia">Sastra Indonesia</option>
+                            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                            <option value="Fisika">Fisika</option>
+                            <option value="Biologi">Biologi</option>
+                            <option value="Matematika">Matematika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+
+                <tr>
+                    <td>Negara</td>
+                    <td>:</td>
+                    <td>
+                        <select id="Negara" name="Negara">
+                            <option type="checkbox" name="Negara" value="Pilih Negara">Pilih Negara</option>
+                            <option type="checkbox" name="Negara" value="Afghanistan">Afghanistan </option>
+                            <option type="checkbox" name="Negara" value="albania">albania </option>
+                            <option type="checkbox" name="Negara" value="aljazar">aljazar </option>
+                            <option type="checkbox" name="Negara" value="austria">austria </option>
+                            <option type="checkbox" name="Negara" value=" bolivia">bolivia </option>
+                            <option type="checkbox" name="Negara" value="brasil">brasil </option>
+                            <option type="checkbox" name="Negara" value="indonesia">indonesia </option>
+                            <option type="checkbox" name="Negara" value="kamboja">kamboja </option>
+                            <option type="checkbox" name="Negara" value="kanada">kanada </option>
+                            <option type="checkbox" name="Negara" value="chili">chili </option>
+                            <option type="checkbox" name="Negara" value="cina">cina </option>
+                            <option type="checkbox" name="Negara" value="kolombia">kolombia </option>
+                            <option type="checkbox" name="Negara" value="korea selatan">korea selatan </option>
+                            <option type="checkbox" name="Negara" value="kroasia">kroasia </option>
+                            <option type="checkbox" name="Negara" value="kuba">kuba </option>
+                            <option type="checkbox" name="Negara" value="laos">laos </option>
+                            <option type="checkbox" name="Negara" value="mesir">mesir </option>
+                            <option type="checkbox" name="Negara" value="thailand">thailand </option>
+                            <option value="lainnya">Lainnya</option> 
+                        </select><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="tl" id="tl"></td>
+                </tr>
+                
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <select>
+                            <option value="pilih jenis kelamin">Pilih Jenis Kelamin </option>
+                            <option type="radio" name="jk" id="jk" value="Laki-laki">Laki-laki </option>
+                            <option type="radio" name="jk" id="jk" value="Perempuan">Perempuan </option>
+                        </select><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobi</td>
+                    <td>:</td>
+                    <td>
+                        <select id="Hobi" name="Hobi">
+                            <option type="checkbox" name="hobi" value="pilih hobi">pilih hobi</option>
+                            <option type="checkbox" name="hobi" value="melukus">Melukis </option>
+                            <option type="checkbox" name="hobi" value="membuat cerita">Membuat cerita </option>
+                            <option type="checkbox" name="hobi" value="olahraga">Olahraga </option>
+                            <option type="checkbox" name="hobi" value="main game">Main game </option>
+                            <option type="checkbox" name="hobi" value="membuat program">Membuat program </option>
+                            <option type="checkbox" name="hobi" value="bernyayi">Bernyayi </option>
+                            <option type="checkbox" name="hobi" value="desain grafis">Desain grafis </option>
+                            <option type="checkbox" name="hobi" value="lainnya">Lainnya </option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>:</td>
+                    <td>
+                        <select >
+                            <option value="pilih agama">Pilih Agama</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" id="alamat"></textarea></td>
+                </tr>
+                <tr class="submit">
+                    <td colspan="2"></td>
+                    <td><input type="submit" value="kirim">
+                        <input type="reset" value="batal"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="container">
+        <form action="POST">
+            <table border="0" cellpadding="5" width="75%">
+                <tr>
+                    <p>Pilih Maksimal 2 dan berikan alasan terhadap pilihan anda :</p>
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">1. </td>
+                        <input type="radio" name="sekretaris 2">
+                        <label for="sekretaris 2">Sekretaris 2</label>
+                        <tab>
+                        <input type="sekretaris 2" id="sekretaris 2"></tab>
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">2. </td>
+                        <input type="radio" name="Bendahara 2">
+                        <label for="sekretaris 2">Bendahara 2</label>
+                        <input type="Bendahara" 2" id="Bendahara 2">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">3. </td>
+                        <input type="radio" name="MIKAT">
+                        <label for="MIKAT">Minat dan Bakat</label>
+                        <input type="MIKAT" id="MIKAT ">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">4. </td>
+                        <input type="radio" name="KASTRAT">
+                        <label for="KASTRAT">KASTRAT</label>
+                        <input type="KASTRAT" id="KASTRAT">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">5. </td>
+                        <input type="radio" name="JALSO">
+                        <label for="JALSO">JALSO</label>
+                        <input type="JALSO" id="JALSO">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">6. </td>
+                        <input type="radio" name="KOMINFO">
+                        <label for="KOMINFO">KOMINFO</label>
+                        <input type="KOMINFO" id="KOMINFO">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">7. </td>
+                        <input type="radio" name="AGAMA">
+                        <label for="AGAMA">AGAMA</label>
+                        <input type="AGAMA" id="AGAMA">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">8. </td>
+                        <input type="radio" name="IPTEK">
+                        <label for="IPTEK">IPTEK</label>
+                        <input type="IPTEK" id="IPTEK">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">9. </td>
+                        <input type="radio" name="KADER">
+                        <label for="KADER">KADER</label>
+                        <input type="KADER" id="KADER">
+                </tr>
+
+                <tr><br>
+                    <label for="pilih">10. </td>
+                        <input type="radio" name="EKRAF">
+                        <label for="EKRAF">EKRAF</label>
+                        <input type="EKRAF" id="EKRAF">
+                </tr>
+
+                 <tr class="submit">
+                    <td colspan="2"></td>
+                    <td><input type="submit" value="kirim">
+                        <input type="reset" value="batal"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
