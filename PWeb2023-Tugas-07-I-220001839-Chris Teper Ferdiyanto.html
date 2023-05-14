@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KALKULATOR</title>
+	<style>
+		body {
+			background-color: cyan;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 30px;
+		}
+
+		.card {
+			background-color: #fffdd0;
+			box-shadow: inset 5px 5px 12px #fffdd0, 5px 5px 12px rgba(0, 0, 0, 0.16);
+			width: 300px;
+			height: 500px;
+			border-radius: 20px;
+			display: flex;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.display {
+			background-color: #fffdd0;
+			box-shadow: inset 2px 3px 11px rgba(0, 0, 0, 0.16), 5px 5px 12px #fffdd0;
+			height: 30%;
+			width: 100%;
+			border-radius: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.display input {
+			background-color: transparent;
+			border: none;
+			text-align: end;
+			font-size: 30px;
+			width: 90%;
+			outline: none;
+		}
+
+		.button {
+			height: 70%;
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.tombol-kiri {
+			width: 70%;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.tombol {
+			background-color: #fffdd0;
+			box-shadow: inset 5px 5px 12px #fffdd0, 5px 5px 12px rgba(0, 0, 0, 0.16);
+			border: none;
+			height: 50px;
+			width: 50px;
+			border-radius: 100%;
+			cursor: pointer;
+			color: black;
+		}
+
+		.tombol:hover {
+			transform: scale(0.9);
+		}
+
+		.tombol-kanan {
+			width: 30%;
+			border-radius: 20px;
+			background-color: rgb(229, 220, 187);
+			box-shadow: inset 5px 5px 12px rgba(0, 0, 0, 0.26), 5px 5px 12px #e6e3c3;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+	</style>
+</head>
+<body>
+	<main class="card">
+		<form class="display">
+			<input id="screen" placeholder="0">
+		</form>
+		<section class="button">
+			<div class="tombol-kiri">
+				<button class="tombol" onclick="display('clear')">C</button>
+				<button class="tombol" onclick="display('%')">%</button>
+				
+				<button class="tombol" onclick="display('del')">del</button>
+				<script>
+					for (let i = 9; i >= 1; i--) {
+						document.write(
+							`<button class="tombol" onclick="display(${i})">${i}</button>`
+						);
+					}
+				</script>
+				<button class="tombol" onclick="display('00')">00</button>
+				<button class="tombol" onclick="display('0')">0</button>
+				<button class="tombol" onclick="display(',')">,</button>
+			</div>
+			<div class="tombol-kanan">
+				<button class="tombol" onclick="display('/')">/</button>
+				<button class="tombol" onclick="display('*')">X</button>
+				<button class="tombol" onclick="display('-')">-</button>
+				<button class="tombol" onclick="display('+')">+</button>
+				<button class="tombol" onclick="display('action')">=</button>
+			</div>
+		</section>
+	</main>
+	<script>
+		const result = document.getElementById('screen');
+		const display = (a) => {
+			if (a === 'clear') {
+				result.value = '';
+			} else if (a === 'del') {
+				result.value = result.value.slice(0, -1);
+			} else if (a === 'action') {
+				try {
+					result.value = eval(result.value);
+				} catch (error) {
+					alert('Error');
+				}
+			} else {
+				result.value += a;
+			}
+		};
+	</script>
+</body>
+</html>
