@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Mahasiswa</title>
+    <style> 
+         * { 
+             box-sizing: border-box; 
+             margin: 0; 
+         } 
+         body { 
+             font-family: Arial, Helvetica, sans-serif; 
+         } 
+         .header { 
+             padding-bottom: 25px; 
+             text-align: center; 
+             background: #fffdd0; 
+             color: black; 
+             font-size: 20px; 
+             margin: 0%; 
+         } 
+         .container { 
+             padding: 0px; 
+             display: flex; 
+             flex-direction: row; 
+             height: 100vh; 
+         } 
+         .navbar { 
+             flex: 1; 
+             background: #f79d99; 
+             padding-top: 25px; 
+             padding-left: 20px; 
+             height: 100vh; 
+         } 
+         .navbar a { 
+             text-decoration: none; 
+             color: black; 
+             font-size: 20px; 
+         } 
+         .navbar ul { 
+             list-style-type: none; 
+         } 
+         .navbar li { 
+             margin-top: 20px; 
+             font-weight: bold; 
+         } 
+         .navbar a:hover { 
+             color: white; 
+         } 
+         .content { 
+             flex: 4; 
+             padding: 20px; 
+         } 
+         .header img { 
+             width: 100px; 
+             height: 100px; 
+             margin: 20px; 
+         } 
+         .submit td input { 
+             margin-right: 25px; 
+             padding: 7px 12px 7px 12px; 
+         } 
+         .content form table { 
+             padding: 30px; 
+             font-size: 20px; 
+         } 
+         .content form table tr td { 
+             padding: 15px; 
+         } 
+     </style> </head>
+<body>
+    <div class="header">
+        <img src="uad.png" alt="logo">
+        <h1>Formulir Mahasiswa Universitas Ahmad Dahlan</h1>
+    </div>
+    <div class="container">
+         <div class="navbar"> 
+             <ul> 
+                 <li><a href="https://uad.ac.id/id/">Home UAD</a></li> 
+                 <li><a href="#">Form Mahasiswa</a></li> 
+                 <li><a href="https://portal.uad.ac.id/">Portal UAD</a></li> 
+                 <li><a href="https://elearning.uad.ac.id/">E-Learning UAD</a></li> 
+             </ul>     
+         </div>
+        <div class="content">
+            <form>
+                <table border="0" cellpadding="5" width="75%">
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" id="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td><input type="number" name="nim" id="nim"></td>
+                    </tr>
+                    <td>Fakultas</td>
+                    <td>:</td>
+                    <td>
+                        <select name="fakultas" id="fakultas">
+                            <option value="pilih Fakultas">Pilih Fakultas</option>
+                            <option value="Fakultas Agama Islam">Fakultas Agama Islam</option>
+                            <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+                            <option value="Fakultas Hukum">Fakultas Hukum</option>
+                            <option value="Fakultas Psikolgi">Fakultas Psikolgi</option>
+                            <option value="Fakultas Farmasi">Fakultas Farmasi</option>
+                            <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
+                            <option value="Fakultas Kesehatan Masyarakat">Fakultas Kesehatan Masyarakat</option>
+                            <option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                            <option value="Fakultas Teknologi Industri">Fakultas Teknologi Industri</option>
+                            <option value="Fakultas Sastra Budaya dan Komunikasi">Fakultas Sastra Budaya dan Komunikasi</option>
+                            <option value="Fakultas Sains dan Teknologi Terapan">Fakultas Sains dan Teknologi Terapan</option>
+                        </select><br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Prodi</td>
+                    <td>:</td>
+                    <td>
+                        <select name="prodi" id="prodi" >
+                            <option value="Pilih Prodi">Pilih Prodi</option>
+                            <option value="Bahasa dan Sastra Arab">Bahasa dan Sastra Arab</option>
+                            <option value="Ilmu Hadis">Ilmu Hadis</option>
+                            <option value="Pend. Agama Islam (Jogja)">Pend. Agama Islam (Jogja)</option>
+                            <option value="Pend. Agama Islam (Wates)">Pend. Agama Islam (Wates)</option>
+                            <option value="Perbankan Syariah">Perbankan Syariah</option>
+                            <option value="Manajemen">Manajemen</option>
+                            <option value="Ekonomi Pembangunan">Ekonomi Pembangunan</option>
+                            <option value="Akuntansi">Akuntansi</option>
+                            <option value="Bisnis Jasa Makanan">Bisnis Jasa Makanan</option>
+                            <option value="Hukum">Hukum</option>
+                            <option value="Psikologi">Psikologi</option>
+                            <option value="Farmasi">Farmasi</option>
+                            <option value="Kedokteran">Kedokteran</option>
+                            <option value="Kesehatan Masyarakat">Kesehatan Masyarakat</option>
+                            <option value="Gizi">Gizi</option>
+                            <option value="Bimbingan dan Konseling">Bimbingan dan Konseling</option>
+                            <option value="Pend. Bahasa dan Sastra Indonesia">Pend. Bahasa dan Sastra Indonesia</option>
+                            <option value="Pend. Bahasa Inggris">Pend. Bahasa Inggris</option>
+                            <option value="Pend. Matematika">Pend. Matematika</option>
+                            <option value="Pend. Fisika">Pend. Fisika</option>
+                            <option value="Pend. Biologi">Pend. Biologi</option>
+                            <option value="Pend. Guru Sekolah Dasar">Pend. Guru Sekolah Dasar</option>
+                            <option value="Pend. Guru PAUD">Pend. Guru PAUD</option>
+                            <option value="Pend. Pancasila dan Kewarganegaraan">Pend. Pancasila dan Kewarganegaraan</option>
+                            <option value="Pend. Vokasional Teknologi Otomotif">Pend. Vokasional Teknologi Otomotif</option>
+                            <option value="Pend. Vokasional Teknik Elektronika">Pend. Vokasional Teknik Elektronika</option>
+                            <option value="Informatika">Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                            <option value="Teknik Kimia">Teknik Kimia</option>
+                            <option value="Teknologi Pangan">Teknologi Pangan</option>
+                            <option value="Sastra Inggris">Sastra Inggris</option>
+                            <option value="Sastra Indonesia">Sastra Indonesia</option>
+                            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                            <option value="Fisika">Fisika</option>
+                            <option value="Biologi">Biologi</option>
+                            <option value="Matematika">Matematika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>:</td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="tl" id="tl"></td>
+                    </tr>
+                    <tr> 
+                         <td>Jenis Kelamin</td> 
+                         <td>:</td> 
+                         <td> 
+                            <select name="jk" id="jk">
+                                <option value="pilih jk">pilih jenis kelamin</option>
+                                <option value="jk">Laki-laki</option>
+                                <option value="jk">perempuan</option>
+                            </select>
+                         </td> 
+                     </tr> 
+                    <tr> 
+                         <td>Hobi</td> 
+                         <td>:</td> 
+                         <td> 
+                            <select name="Hobi" id="hobi">
+                                 <option value="pilih hobi">pilih hobi</option>
+                                <option value="membaca">Membaca</option>
+                                <option value="menulis">Menulis</option>
+                                <option value="joging">Joging</option>
+                                <option value="sepakbola">Sepakbola</option>
+                                 <option value="lain-lain">Lain-lain</option>
+                            </select>
+                         </td> 
+                     </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>:</td>
+                        <td>
+                            <select name="agama" id="agama">
+                                <option value="pilih agama">pilih agama</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghucu">Konghucu</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><textarea name="alamat" id="alamat"></textarea></td>
+                    </tr>
+                    <tr class="submit">
+                        <td colspan="2"></td>
+                        <td><input type="submit" name="submit" id="submit" onClick="submitData()"><input type="reset" name="reset" id="reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script>
+        function submitData() {
+            var success = true;
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var tl = document.getElementById("tl").value;
+            var jk = document.getElementById("jk").value;
+            var hobi = document.getElementById("hobi").value;
+            var agama = document.getElementById("agama").value;
+            var alamat = document.getElementById("alamat").value;
+            if (nama === "" || nim === "" || fakultas === "" || prodi === "" || email === "" || password === "" || tl === "" || jk === "" || agama === "" || alamat === "") {
+                alert("Data tidak boleh kosong, WAJIB SEMUA TERISI!");
+                success = false;
+            }
+            if (email != "") {
+                var at = email.indexOf("@");
+                var dot = email.lastIndexOf(".");
+                if (at < 1 || dot < at + 2 || dot + 2 >= email.length) {
+                    alert("Email tidak valid!");
+                    success = false;
+                }
+            }
+            if (nama.length == "") {
+                alert("Harus Nama lengkap");
+                success = false;
+            }
+            if (nim.length != 10) {
+                alert("NIM harus 10 karakter!");
+                success = false;
+            }
+            if (password.length < 8) {
+                alert("Password minimal 8 karakter!");
+                success = false;
+            }
+            if (tl != "") {
+                var today = new Date();
+                var birthDate = new Date(tl);
+                var usia = today.getFullYear() - birthDate.getFullYear();
+                var m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    usia--;
+                }
+                if (usia < 18) {
+                    alert("Usia minimal 18 tahun!");
+                    success = false;
+                }
+            }
+            if (success == true) {
+                alert("Data berhasil disimpan!");
+            }
+        };
+    </script>
+</body>
+</html>
